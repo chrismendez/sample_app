@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  @base_title = "Rails Tutorial"
+
   def home
     @title = "Home"
   end
@@ -9,6 +11,10 @@ class PagesController < ApplicationController
 
   def about
     @title = "About"
+  end
+
+  def help
+    @title = "Help"
   end
 
 end
